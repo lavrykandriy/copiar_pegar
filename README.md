@@ -78,13 +78,15 @@ make fclean # Elimina objetos y ejecutables
 ```
 
 ### Ejecución y pruebas
-```bash
-# Ordenar y verificar con checker
-ARG="4 67 3 87 23"; ./push_swap \(ARG \vert{} ./checker\)ARG
 
+Ordenar y verificar con checker
+```bash
+ ARG="4 67 3 87 23"; ./push_swap $ARG | ./checker $ARG
+```
 # Ejecutar con métricas de rendimiento en stderr
-ARG=\$(shuf -i 0-9999 -n 500 | tr '\n' ' ')
-./push_swap --bench \(ARG \vert{} ./checker\)ARG
+```bash
+ARG=$(shuf -i 0-9999 -n 500 | tr '\n' ' '); ./push_sw
+ap --bench $ARG |./checker $ARG
 ```
 
 ## Recursos
