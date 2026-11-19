@@ -85,8 +85,7 @@ Ordenar y verificar con checker
 ```
 # Ejecutar con métricas de rendimiento en stderr
 ```bash
-ARG=$(shuf -i 0-9999 -n 500 | tr '\n' ' '); ./push_sw
-ap --bench $ARG |./checker $ARG
+ARG=$(shuf -i 0-9999 -n 500 | tr '\n' ' '); ./push_swap --bench $ARG |./checker $ARG
 ```
 
 ## Recursos
