@@ -12,8 +12,6 @@
 
 #include "../includes/push_swap.h"
 
-#include "../includes/push_swap.h"
-
 static int	get_max_bits(int len)
 {
 	int	max_num;
